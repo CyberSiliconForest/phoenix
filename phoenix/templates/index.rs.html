@@ -1,0 +1,13 @@
+@(params: &(&str, &str))
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Phoenix Project</title>
+    </head>
+    <body>
+        Current state: <span id="state">@params.0</span><br>
+        Expires at: <span id="expires">@params.1</span>
+    </body>
+</html>

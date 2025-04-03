@@ -3,9 +3,15 @@ name = "phoenix"
 version = "0.1.0"
 edition = "2024"
 
+build = "src/build.rs"
+
+[build-dependencies]
+ructe = { version = "^0.18.2", features = ["mime03", "sass"] }
+
 [dependencies]
-tokio = { version = "1.44.1", features = ["full"] }
-sonic-rs = "0.4.1"
-axum-serde = "0.8.1"
-axum = { version = "0.8.3" }
-jsonwebtoken = { version = "9.3.1" }
+tokio = { version = "^1.44.1", features = ["full"] }
+sonic-rs = "^0.4.1"
+axum-serde = "^0.8.1"
+axum = { version = "^0.8.3" }
+jsonwebtoken = { version = "^9.3.1" }
+mime = "^0.3.17"
