@@ -11,7 +11,10 @@ ructe = { version = "^0.18.2", features = ["mime03", "sass"] }
 [dependencies]
 tokio = { version = "^1.44.1", features = ["full"] }
 sonic-rs = "^0.4.1"
-axum-serde = "^0.8.1"
+serde = { version = "^1.0.219", features = ["derive"] }
+strum = { version = "^0.27.1", features = ["derive"] }
+axum-serde = { version = "^0.8.1", features = ["sonic"] }
 axum = { version = "^0.8.3" }
 jsonwebtoken = { version = "^9.3.1" }
 mime = "^0.3.17"
+chrono = { version = "^0.4.40" }
